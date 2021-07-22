@@ -1,3 +1,4 @@
+
 ## Repositorio criado para os projetos/atividades desenvolvidas durante o curso da Trybe!
 
 ### [Trybe](https://www.betrybe.com/) :rocket:
