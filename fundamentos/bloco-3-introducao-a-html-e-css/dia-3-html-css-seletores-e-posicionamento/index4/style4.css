@@ -1,0 +1,44 @@
+body {
+  background-color: #dddddd;
+}
+.button:hover {
+  width: 60%;
+  border: 5px solid rgb(134, 134, 134);
+}
+.primaria {
+  font-style: italic;
+  width: 60%;
+  background-color: yellow;
+}
+
+.secundaria {
+  width: 60%;
+  background-color: red;
+}
+
+.complementar {
+  font-style: italic;
+  width: 80%;
+  background-color: black;
+}
+
+.complementar:hover {
+  width: 90%;
+  border: 5px solid rgb(134, 134, 134);
+}
+
+.escura {
+  width: 60%;
+  background-color: rgb(0, 0, 110);
+}
+
+.clara {
+  font-style: italic;
+  width: 60%;
+  background-color: rgb(153, 153, 248);
+}
+
+h3 {
+  color: #916f6f;
+  text-align: center;
+}
