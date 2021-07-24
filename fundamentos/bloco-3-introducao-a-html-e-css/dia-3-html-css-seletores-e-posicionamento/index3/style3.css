@@ -1,0 +1,22 @@
+body {
+  font-size: 20px;
+}
+
+h1,
+p {
+  text-align: center;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+ol li:hover {
+  background-color: black;
+  color: #f5f5f5;
+}
+
+ol li:active {
+  color: #f5f5f5;
+  font-family: sans-serif;
+}

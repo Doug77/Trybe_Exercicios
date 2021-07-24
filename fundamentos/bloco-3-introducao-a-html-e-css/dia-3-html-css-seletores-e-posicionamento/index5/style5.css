@@ -1,0 +1,57 @@
+ul li {
+  background-color: yellow;
+  font-size: 20px;
+  width: 30%;
+}
+ol li {
+  font-weight: 600;
+}
+
+.par {
+  color: green;
+}
+
+.impar {
+  text-transform: uppercase;
+}
+
+h1,
+h3 {
+  color: red;
+}
+
+#ith1 {
+  font-size: 40px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.pglg {
+  color: blue;
+}
+
+.java {
+  background-color: pink;
+}
+
+.flow:hover {
+  background-color: orange;
+}
+
+.school:hover {
+  background-color: green;
+}
+
+.web:hover {
+  background-color: black;
+  color: white;
+}
+
+.docs:hover {
+  background-color: yellow;
+  border: 1px solid red;
+}
+
+.trybe:hover {
+  background-color: blue;
+}
