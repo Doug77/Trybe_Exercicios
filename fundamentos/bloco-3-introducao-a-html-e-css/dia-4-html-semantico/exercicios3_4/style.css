@@ -1,0 +1,22 @@
+body {
+  font-family: 'Baloo Chettan 2', cursive;
+  background-color: #edf2f4;
+}
+
+#cabecalho {
+  background-color: #8d99ae;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+}
+
+ul li {
+  text-decoration: none;
+  list-style: none;
+}
+
+#inicio {
+  margin-bottom: 150px;
+}
