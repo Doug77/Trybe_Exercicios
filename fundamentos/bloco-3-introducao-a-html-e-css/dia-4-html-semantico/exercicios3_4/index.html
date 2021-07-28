@@ -1,36 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&display=swap"
+      rel="stylesheet"
+    />
+    <title>O Stomatopoda</title>
   </head>
+
   <body>
-    <header>Soco a 80km/h: Conheça o Stomatopoda</header>
-    <ul>
-      <li><a href="#">Página Inicial</a></li>
-      <li><a href="#">Sobre</a></li>
-      <li><a href="#">Contato</a></li>
-    </ul>
-    <section>
-      <header>Fatos sobre o Stomatopoda</header>
+    <header id="cabecalho">
+      <h1>Soco a 80km/h: Conheça o Stomatopoda</h1>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Página Inicial</a></li>
+          <li><a href="#artigo1">Sobre</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h1 id="inicio">inicio</h1>
+    <main>
+      <h2>Fatos sobre o Stomatopoda</h2>
+      <img
+        src="https://www.aquaa3.com.br/wp-content/uploads/2020/09/og-mantis-super-poderes-1024x538.png"
+        alt="ilustração do stomatopoda"
+        width="40%"
+      />
+      <aside id="tabela">
+        <h3>Classificação Científica</h3>
+        <table border="1">
+          <tr>
+            <td>Reino</td>
+            <td>Filo</td>
+            <td>Subfilo</td>
+            <td>Classe</td>
+            <td>Subclasse</td>
+            <td>Ordem</td>
+          </tr>
+          <tr>
+            <td>Animalia</td>
+            <td>Arthropoda</td>
+            <td>Crustacea</td>
+            <td>Malacostraca</td>
+            <td>Hoplocarida</td>
+            <td>Stomatopoda</td>
+          </tr>
+        </table>
+      </aside>
       <article>
-        <section>
-          Stomatopoda (nome científico <em>Odontodactylus scyllarus</em>),
-          chamados popularmente de tamarutacas ou de lacraias-do-mar no Brasil,
-          é uma ordem de crustáceos marinhos da subclasse Hoplocarida, que
-          agrupa cerca de 400 espécies, caracterizadas principalmente pela
-          morfologia da segunda pata torácica, que é modificada em apêndice
-          subquelado, lembrando uma pata de louva-a-deus.[2]
+        <section id="artigo1">
+          <p>
+            Stomatopoda (nome científico <em>Odontodactylus scyllarus</em>),
+            chamados popularmente de tamarutacas ou de lacraias-do-mar no
+            Brasil, é uma ordem de crustáceos marinhos da subclasse Hoplocarida,
+            que agrupa cerca de 400 espécies, caracterizadas principalmente pela
+            morfologia da segunda pata torácica, que é modificada em apêndice
+            subquelado, lembrando uma pata de louva-a-deus.[2]
+          </p>
         </section>
-        Esses animais possuem o mais complexo sistema de visão de cores do mundo
-        animal, pois enxergam 12 cores primárias, correspondentes aos 12
-        pigmentos distintos presentes em sua retina. Nossos olhos possuem três
-        tipos desses receptores - que correspondem à luz azul, verde e vermelha
-        -, que nos permitem perceber o espectro de cores que vemos.
+        <section id="fatos">
+          <h3>Curiosidade</h3>
+          animais possuem o mais complexo sistema de visão de cores do mundo
+          animal, pois enxergam 12 cores primárias, correspondentes aos 12
+          pigmentos distintos presentes em sua retina. Nossos olhos possuem três
+          tipos desses receptores - que correspondem à luz azul, verde e
+          vermelha -, que nos permitem perceber o espectro de cores que vemos.
+        </section>
+        <h3>O soco!</h3>
+        <img
+          src="https://www.aquaa3.com.br/wp-content/uploads/2020/09/animal-mais-forte-mundo-1024x734.png"
+          alt="ilustração do stomatopoda lutando com um boxeador"
+          width="40%"
+        />
+        <section id="soco">
+          O Camarão Mantis esmagador possui dois apêndices bem desenvolvidos
+          (semelhantes a um martelo), chamados de Porretes de Dáctilo. Com essas
+          “super patas” o animal espanca e esmaga suas presas em uma
+          <b>intensidade de aproximadamente 60 kg/cm²</b> (daí o motivo de um de
+          seus nomes ser lagosta-boxeadora).
+          <a
+            href="https://www.youtube.com/watch?v=E0Li1k5hGBE&ab_channel=NatGeoWILD"
+            target="_blank"
+            >Veja este incrivel animal em ação!!</a
+          >
+        </section>
       </article>
-      <table>
-        Reino
-      </table>
-    </section>
+    </main>
+    <footer id="rodape">
+      <p>
+        "Conteúdo compilado por Douglas de Oliveira Gama, 2021".
+        <br />Referencias à
+        <a
+          href="https://www.aquaa3.com.br/curiosidades-camarao-mantis/"
+          target="_blank"
+          >Aquaa3</a
+        >
+        e
+        <a href="https://pt.wikipedia.org/wiki/Stomatopoda" target="_blank"
+          >Wikipedia</a
+        >
+      </p>
+    </footer>
   </body>
 </html>
