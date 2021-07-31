@@ -1,46 +1,30 @@
-// let salarioBruto = 3000
+let aliquotINSS
+let aliquotIR
 
-// const aliquota8 = salarioBruto * 0.08
-// const aliquota9 = salarioBruto * 0.09
-// const aliquota11 = salarioBruto * 0.11
-// const aliquotaMaxima = 570.88
+const grossSalary = 10000
 
-// if (salarioBruto <= 1556.94) {
-//   taxaInss = salarioBruto - aliquota8
-// } else if (salarioBruto <= 2594.92) {
-//   taxaInss = salarioBruto - aliquota9
-// } else if (salarioBruto <= 5189.82) {
-//   taxaInss = salarioBruto - aliquota11
-// } else {
-//   taxaInss = salarioBruto - aliquotaMaxima
-// }
+if (grossSalary <= 1556.94) {
+  aliquotINSS = grossSalary * 0.08
+} else if (grossSalary <= 2594.92) {
+  aliquotINSS = grossSalary * 0.09
+} else if (grossSalary <= 5189.82) {
+  aliquotINSS = grossSalary * 0.11
+} else {
+  aliquotINSS = 570.88
+}
 
-// let salarioIr = salarioBruto - taxaInss
+const baseSalary = grossSalary - aliquotINSS
 
-// const aliquotaIr75 = salarioBruto * 0.075
-// const aliquotaIr150 = salarioBruto * 0.15
-// const aliquotaIr225 = salarioBruto * 0.225
-// const aliquotaIr275 = salarioBruto * 0.275
+if (baseSalary <= 1903.98) {
+  aliquotIR = 0
+} else if (baseSalary <= 2826.65) {
+  aliquotIR = baseSalary * 0.075 - 142.8
+} else if (baseSalary <= 3751.05) {
+  aliquotIR = baseSalary * 0.15 - 354.8
+} else if (baseSalary <= 4664.68) {
+  aliquotIR = baseSalary * 0.225 - 636.13
+} else {
+  aliquotIR = baseSalary * 0.275 - 869.36
+}
 
-// if (salarioIr <= 2826.65) {
-//   taxaInss = salarioIr - aliquotaIr75
-//   parcelaImposto = 142.8
-// } else if (salarioBruto <= 3751.05) {
-//   taxaInss = salarioBruto - aliquotaIr150
-//   parcelaImposto = 354.8
-// } else if (salarioBruto <= 4664.68) {
-//   taxaInss = salarioBruto - aliquotaIr225
-//   parcelaImposto = 636.13
-// } else if (salarioBruto > 4664.68) {
-//   taxaInss = salarioBruto - aliquotaIr275
-//   parcelaImposto = 869.36
-// } else if (salarioIr < 1903.98) {
-//   parcelaImposto = 0
-// }
-
-// let salarioLiquido
-
-// console.log(
-//   'Valor do Salario Liquido é de R$:',
-//   (salarioLiquido = salarioIr - parcelaImposto)
-// )
+console.log('Salário: ' + (baseSalary - aliquotIR))
