@@ -1,7 +1,7 @@
 let aliquotINSS
 let aliquotIR
 
-const grossSalary = 10000
+const grossSalary = 3000
 
 if (grossSalary <= 1556.94) {
   aliquotINSS = grossSalary * 0.08
