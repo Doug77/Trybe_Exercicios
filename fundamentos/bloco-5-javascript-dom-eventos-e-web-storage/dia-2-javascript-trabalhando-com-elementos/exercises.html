@@ -118,8 +118,17 @@
       //9
       for (let i = 1; i <= 3; i++) {
         const tagH3 = document.createElement('h3')
+        tagH3.className = 'description'
         elementMain.appendChild(tagH3)
       }
+
+      //Alterações
+      textH1.className = 'title'
+      elementMain.removeChild(leftSection)
+      rightSection.style = 'margin-right: auto'
+      section.style.backgroundColor = 'green'
+      unorderedList.removeChild(unorderedList.lastElementChild)
+      unorderedList.removeChild(unorderedList.lastElementChild)
     </script>
   </body>
 </html>
