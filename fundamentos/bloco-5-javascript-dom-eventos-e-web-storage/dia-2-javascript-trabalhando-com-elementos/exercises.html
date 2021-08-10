@@ -74,7 +74,7 @@
 
       //4
       const paragraph = document.createElement('p')
-      paragraph.innerText = 'Um texto qualquer'
+      paragraph.innerText = 'JavaScript - Trabalhando com elementos'
       section.appendChild(paragraph)
 
       //5
@@ -92,6 +92,27 @@
       siteImage.src = 'https://picsum.photos/200'
       siteImage.className = 'small-image'
       leftSection.appendChild(siteImage)
+
+      //8
+      const unorderedList = document.createElement('ul')
+      const uListItems = [
+        'Um',
+        'Dois',
+        'Três',
+        'Quatro',
+        'Cinco',
+        'Seis',
+        'Sete',
+        'Oito',
+        'Nove',
+        'Dez'
+      ]
+      for (let index in uListItems) {
+        const li = document.createElement('li')
+        li.innerText = uListItems[index]
+        unorderedList.appendChild(li)
+      }
+      rightSection.appendChild(unorderedList)
     </script>
   </body>
 </html>
