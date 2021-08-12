@@ -64,12 +64,12 @@ function colorHoliday() {
 
   btnHoliday.addEventListener('click', function colorHoliday() {
     for (let i = 0; i < allHoliday.length; i++) {
-      if (allHoliday[i].style.backgroundColor === 'green') {
+      if (allHoliday[i].style.backgroundColor === 'white') {
         allHoliday[i].style.backgroundColor = 'rgb(238,238,238)'
         allHoliday[i].style.color = '#777'
       } else {
-        allHoliday[i].style.backgroundColor = 'green'
-        allHoliday[i].style.color = '#ededed'
+        allHoliday[i].style.backgroundColor = 'white'
+        allHoliday[i].style.color = '#777'
       }
     }
   })
@@ -87,4 +87,20 @@ function buttonFriday(friday) {
 buttonFriday('Sexta-Feira')
 
 //5
-function textFriday() {}
+function textFriday() {
+  let btnFriday = document.querySelector('#btn-friday')
+  let allFriday = document.querySelectorAll('.friday')
+  let itsFriday = 'Sextoou!'
+
+  btnFriday.addEventListener('click', function eventFriday() {
+    for (let index = 0; index < allFriday.length; index++) {
+      if (allFriday[index].innerHTML === itsFriday) {
+        allFriday[index].innerHTML = fridayArray[index]
+      } else {
+        allFriday[index].innerHTML = itsFriday
+      }
+    }
+  })
+  let fridayArray = ['4', '11', '18', '25']
+}
+textFriday()
