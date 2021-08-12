@@ -26,7 +26,7 @@ const dezDaysList = [
   29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
   21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
 ]
-
+//1
 function daysOfMonth() {
   let classDay = document.querySelector('#days')
 
@@ -47,6 +47,7 @@ function daysOfMonth() {
 }
 daysOfMonth()
 
+//2
 function buttonHoliday(holiday) {
   let buttonClass = document.querySelector('.buttons-container')
   let newButton = document.createElement('button')
@@ -55,3 +56,24 @@ function buttonHoliday(holiday) {
   buttonClass.appendChild(newButton)
 }
 buttonHoliday('Feriados')
+
+//3
+function colorHoliday() {
+  let btnHoliday = document.querySelector('#btn-holiday')
+  let allHoliday = document.querySelectorAll('.holiday')
+
+  btnHoliday.addEventListener('click', function colorHoliday() {
+    for (let i = 0; i < allHoliday.length; i++) {
+      if (allHoliday[i].style.backgroundColor === 'green') {
+        allHoliday[i].style.backgroundColor = 'rgb(238,238,238)'
+        allHoliday[i].style.color = '#777'
+      } else {
+        allHoliday[i].style.backgroundColor = 'green'
+        allHoliday[i].style.color = '#ededed'
+      }
+    }
+  })
+}
+colorHoliday()
+
+//4
