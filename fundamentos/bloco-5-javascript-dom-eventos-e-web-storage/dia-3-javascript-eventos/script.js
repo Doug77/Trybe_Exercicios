@@ -85,3 +85,6 @@ function buttonFriday(friday) {
   buttonClass.appendChild(fridayButton)
 }
 buttonFriday('Sexta-Feira')
+
+//5
+function textFriday() {}
