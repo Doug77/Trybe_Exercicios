@@ -77,3 +77,11 @@ function colorHoliday() {
 colorHoliday()
 
 //4
+function buttonFriday(friday) {
+  let buttonClass = document.querySelector('.buttons-container')
+  let fridayButton = document.createElement('button')
+  fridayButton.innerText = friday
+  fridayButton.id = 'btn-friday'
+  buttonClass.appendChild(fridayButton)
+}
+buttonFriday('Sexta-Feira')
