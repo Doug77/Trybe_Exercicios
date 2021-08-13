@@ -26,6 +26,7 @@ const dezDaysList = [
   29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
   21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
 ]
+
 //1
 function daysOfMonth() {
   let classDay = document.querySelector('#days')
@@ -91,9 +92,12 @@ function textFriday() {
   let btnFriday = document.querySelector('#btn-friday')
   let allFriday = document.querySelectorAll('.friday')
   let itsFriday = 'Sextoou!'
+  let fridayArray = []
 
   btnFriday.addEventListener('click', function eventFriday() {
     for (let index = 0; index < allFriday.length; index++) {
+      let numeros = allFriday[index]
+      fridayArray.push(numeros.innerHTML)
       if (allFriday[index].innerHTML === itsFriday) {
         allFriday[index].innerHTML = fridayArray[index]
       } else {
@@ -101,6 +105,5 @@ function textFriday() {
       }
     }
   })
-  let fridayArray = ['4', '11', '18', '25']
 }
 textFriday()
