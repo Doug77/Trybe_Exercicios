@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <header class="head">
+      <h1>Formulário</h1>
+      <p><em>Preencha todos os campos do formulário para continuar!</em></p>
+    </header>
+    <form action="" method="GET">
+      <fieldset id="userData">
+        <legend>Dados do Usuário</legend>
+        <div>
+          <label for="Fullname"> Nome Completo: </label>
+          <input
+            type="text"
+            name="completedName"
+            id="Fullname"
+            required
+            maxlength="40"
+            placeholder="Digite seu nome"
+          />
+        </div>
+        <div>
+          <label for="email">E-mail:</label>
+          <input
+            id="email"
+            type="text"
+            name="userEmail"
+            required
+            maxlength="50"
+            placeholder="Digite seu e-mail"
+          />
+        </div>
+        <div>
+          <label for="numberCpf">CPF:</label>
+          <input
+            id="numberCpf"
+            type="text"
+            name="cpf"
+            required
+            maxlength="11"
+            placeholder="Digite Seu CPF"
+          />
+        </div>
+        <div>
+          <label for="endereço">Endereço:</label>
+          <input
+            id="endereço"
+            type="text"
+            name="address"
+            maxlength="200"
+            required
+            placeholder="Informe seu endereço"
+          />
+        </div>
+        <div>
+          <label for="cidade">Cidade:</label>
+          <input
+            id="cidade"
+            type="text"
+            required
+            maxlength="28"
+            placeholder="Digite sua cidade"
+          />
+        </div>
+        <div>
+          <label id="selectedState">Estado:</label>
+          <select name="changeState" id="state" required>
+            <option>--Escola um estado--</option>
+          </select>
+        </div>
+        <div>
+          <label for="home">Casa</label>
+          <input type="radio" id="home" name="local-type" />
+          <label for="apt">Apartamento</label>
+          <input type="radio" id="apt" name="local-type" />
+        </div>
+      </fieldset>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
