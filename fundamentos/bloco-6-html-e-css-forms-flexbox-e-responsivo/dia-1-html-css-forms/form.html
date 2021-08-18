@@ -82,6 +82,40 @@
           <input type="radio" id="apt" name="local-type" />
         </div>
       </fieldset>
+      <fieldset>
+        <legend>Ultimo Emprego</legend>
+        <div>
+          <label for="description">Descreva o seu Curriculo</label>
+          <textarea
+            name="description"
+            maxlength="100"
+            required
+            class="TextArea"
+          ></textarea>
+        </div>
+        <div>
+          <label for="cargo">Cargo</label>
+          <input
+            type="text"
+            required
+            placeholder="Insira seu cargo"
+            maxlength="40"
+          />
+        </div>
+        <div>
+          <label for="workDescription">Descreva o seu cargo aqui:</label>
+          <textarea
+            name="workDescription"
+            name="descrição"
+            required
+            maxlength="500"
+          ></textarea>
+        </div>
+        <div>
+          <label for="validDate">Data</label>
+          <input type="date" name="validDate" required />
+        </div>
+      </fieldset>
     </form>
     <script src="script.js"></script>
   </body>
