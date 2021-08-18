@@ -15,7 +15,7 @@
     <form action="" method="GET">
       <fieldset id="userData">
         <legend>Dados do Usuário</legend>
-        <div>
+        <div class="line-content">
           <label for="Fullname"> Nome Completo: </label>
           <input
             type="text"
@@ -26,7 +26,7 @@
             placeholder="Digite seu nome"
           />
         </div>
-        <div>
+        <div class="line-content">
           <label for="email">E-mail:</label>
           <input
             id="email"
@@ -37,7 +37,7 @@
             placeholder="Digite seu e-mail"
           />
         </div>
-        <div>
+        <div class="line-content">
           <label for="numberCpf">CPF:</label>
           <input
             id="numberCpf"
@@ -48,7 +48,7 @@
             placeholder="Digite Seu CPF"
           />
         </div>
-        <div>
+        <div class="line-content">
           <label for="endereço">Endereço:</label>
           <input
             id="endereço"
@@ -59,7 +59,7 @@
             placeholder="Informe seu endereço"
           />
         </div>
-        <div>
+        <div class="line-content">
           <label for="cidade">Cidade:</label>
           <input
             id="cidade"
@@ -69,22 +69,22 @@
             placeholder="Digite sua cidade"
           />
         </div>
-        <div>
+        <div class="line-content">
           <label id="selectedState">Estado:</label>
           <select name="changeState" id="state" required>
             <option>--Escola um estado--</option>
           </select>
         </div>
-        <div>
+        <div class="line-content">
           <label for="home">Casa</label>
           <input type="radio" id="home" name="local-type" />
           <label for="apt">Apartamento</label>
           <input type="radio" id="apt" name="local-type" />
         </div>
       </fieldset>
-      <fieldset>
+      <fieldset id="userWork">
         <legend>Ultimo Emprego</legend>
-        <div>
+        <div class="line-content">
           <label for="description">Descreva o seu Curriculo</label>
           <textarea
             name="description"
@@ -93,7 +93,7 @@
             class="TextArea"
           ></textarea>
         </div>
-        <div>
+        <div class="line-content">
           <label for="cargo">Cargo</label>
           <input
             type="text"
@@ -102,7 +102,7 @@
             maxlength="40"
           />
         </div>
-        <div>
+        <div class="line-content">
           <label for="workDescription">Descreva o seu cargo aqui:</label>
           <textarea
             name="workDescription"
@@ -111,7 +111,7 @@
             maxlength="500"
           ></textarea>
         </div>
-        <div>
+        <div class="line-content">
           <label for="validDate">Data</label>
           <input type="date" name="validDate" required />
         </div>
