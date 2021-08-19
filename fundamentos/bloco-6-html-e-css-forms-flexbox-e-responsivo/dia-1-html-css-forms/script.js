@@ -67,3 +67,18 @@ function generetOption() {
   }
 }
 generetOption()
+
+function checkDate() {
+  const day = document.getElementById('dia')
+  const month = document.getElementById('mes')
+  const year = document.getElementById('ano')
+  if (day.value < 0 || day.value > 31) {
+    alert('Dia inválido, por favor insira um dia válido.')
+  }
+  if (month.value < 0 || month.value > 12) {
+    alert('Mês inválido, por favor insira um mês válido.')
+  }
+  if (year.value < 0) {
+    alert('Ano inválido, por favor insira um ano válido.')
+  }
+}

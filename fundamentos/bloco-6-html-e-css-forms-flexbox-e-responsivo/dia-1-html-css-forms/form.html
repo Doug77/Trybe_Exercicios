@@ -83,7 +83,7 @@
         </div>
       </fieldset>
       <fieldset id="userWork">
-        <legend>Ultimo Emprego</legend>
+        <legend>Último Emprego</legend>
         <div class="line-content">
           <label for="description">Descreva o seu Curriculo</label>
           <textarea
@@ -112,10 +112,37 @@
           ></textarea>
         </div>
         <div class="line-content">
-          <label for="validDate">Data</label>
-          <input type="date" name="validDate" required />
+          <label for="validDate">Data:</label>
+          <input
+            type="text"
+            name="validDate"
+            id="dia"
+            required
+            maxlength="2"
+            placeholder="dia"
+          />
+          <input
+            type="text"
+            name="validDate"
+            id="mes"
+            required
+            maxlength="2"
+            placeholder="mes"
+          />
+          <input
+            type="text"
+            name="validDate"
+            id="ano"
+            required
+            maxlength="4"
+            placeholder="ano"
+          />
         </div>
       </fieldset>
+      <div>
+        <button id="send">Enviar</button>
+        <button id="clean">Limpar</button>
+      </div>
     </form>
     <script src="script.js"></script>
   </body>
