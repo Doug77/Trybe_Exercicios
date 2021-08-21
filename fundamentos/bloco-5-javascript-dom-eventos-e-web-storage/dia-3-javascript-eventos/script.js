@@ -152,16 +152,5 @@ addColorTask('blue')
 const selectedDay = document.querySelectorAll('.day')
 const taskSelected = document.getElementsByClassName('selected-task')
 console.log(selectedDay)
-function colorDay() {
-  for (let i = 0; i < selectedDay.length; i++) {
-    selectedDay[i].addEventListener('click', () => {
-      selectedDay[i].className = 'selected-task'
-      if (selectedDay[i].className == taskSelected) {
-        selectedDay[i].style.color = taskSelected
-      } else {
-        selectedDay[i].style.backgroundColor = 'rgb(119,119,119)'
-      }
-    })
-  }
-}
+function colorDay() {}
 colorDay()
