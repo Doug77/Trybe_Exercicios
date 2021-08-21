@@ -67,9 +67,12 @@ function colorHoliday() {
     for (let i = 0; i < allHoliday.length; i++) {
       if (allHoliday[i].style.backgroundColor === 'white') {
         allHoliday[i].style.backgroundColor = 'rgb(238,238,238)'
+        allHoliday[i].style.border = 'none'
         allHoliday[i].style.color = '#777'
       } else {
         allHoliday[i].style.backgroundColor = 'white'
+        allHoliday[i].style.border = '1px solid gray'
+        allHoliday[i].style.borderRadius = '5px'
         allHoliday[i].style.color = '#777'
       }
     }
@@ -110,7 +113,6 @@ textFriday()
 
 //6
 let mouseTarget = document.getElementsByClassName('day')
-console.log(mouseTarget)
 for (let i = 0; i < mouseTarget.length; i++) {
   mouseTarget[i].addEventListener('mouseover', function over(e) {
     e.target.style.transform = 'scale(2)'
@@ -121,5 +123,10 @@ for (let i = 0; i < mouseTarget.length; i++) {
 }
 
 //7
-// const tasksMonth = document.getElementById('my-tasks')
-// function addTasks('')
+const tasksMonth = document.querySelector('.my-tasks')
+function addTasks() {
+  const mytasks = document.createElement('span')
+  mytasks.innerHTML = 'name Task'
+  tasksMonth.appendChild(mytasks)
+}
+addTasks()
