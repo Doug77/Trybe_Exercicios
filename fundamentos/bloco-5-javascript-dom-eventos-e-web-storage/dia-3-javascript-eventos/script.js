@@ -67,9 +67,12 @@ function colorHoliday() {
     for (let i = 0; i < allHoliday.length; i++) {
       if (allHoliday[i].style.backgroundColor === 'white') {
         allHoliday[i].style.backgroundColor = 'rgb(238,238,238)'
+        allHoliday[i].style.border = 'none'
         allHoliday[i].style.color = '#777'
       } else {
         allHoliday[i].style.backgroundColor = 'white'
+        allHoliday[i].style.border = '1px solid gray'
+        allHoliday[i].style.borderRadius = '5px'
         allHoliday[i].style.color = '#777'
       }
     }
@@ -109,3 +112,56 @@ function textFriday() {
 textFriday()
 
 //6
+let mouseTarget = document.getElementsByClassName('day')
+for (let i = 0; i < mouseTarget.length; i++) {
+  mouseTarget[i].addEventListener('mouseover', function over(e) {
+    e.target.style.transform = 'scale(2)'
+  })
+  mouseTarget[i].addEventListener('mouseout', function leave(e) {
+    e.target.style.transform = 'scale(1)'
+  })
+}
+
+//7
+const tasksMonth = document.querySelector('.my-tasks')
+function addTasks() {
+  const mytasks = document.createElement('span')
+  mytasks.innerHTML = 'name Task'
+  tasksMonth.appendChild(mytasks)
+}
+addTasks()
+
+//8
+function addColorTask(cor) {
+  const myColortasks = document.createElement('div')
+  myColortasks.style.backgroundColor = cor
+  myColortasks.className = 'task'
+  myColortasks.addEventListener('click', function () {
+    //9
+    if (myColortasks.className !== 'selected-task') {
+      myColortasks.className = 'selected-task'
+    } else {
+      myColortasks.className = 'task'
+    }
+  })
+  tasksMonth.appendChild(myColortasks)
+}
+addColorTask('blue')
+
+//10
+const selectedDay = document.querySelectorAll('.day')
+const taskSelected = document.getElementsByClassName('selected-task')
+console.log(selectedDay)
+function colorDay() {
+  for (let i = 0; i < selectedDay.length; i++) {
+    selectedDay[i].addEventListener('click', () => {
+      selectedDay[i].className = 'selected-task'
+      if (selectedDay[i].className == taskSelected) {
+        selectedDay[i].style.color = taskSelected
+      } else {
+        selectedDay[i].style.backgroundColor = 'rgb(119,119,119)'
+      }
+    })
+  }
+}
+colorDay()
