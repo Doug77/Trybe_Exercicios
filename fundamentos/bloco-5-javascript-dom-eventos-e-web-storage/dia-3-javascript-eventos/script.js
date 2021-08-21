@@ -109,12 +109,17 @@ function textFriday() {
 textFriday()
 
 //6
-let mouseTarget = document.querySelector('#days')
+let mouseTarget = document.getElementsByClassName('day')
+console.log(mouseTarget)
+for (let i = 0; i < mouseTarget.length; i++) {
+  mouseTarget[i].addEventListener('mouseover', function over(e) {
+    e.target.style.transform = 'scale(2)'
+  })
+  mouseTarget[i].addEventListener('mouseout', function leave(e) {
+    e.target.style.transform = 'scale(1)'
+  })
+}
 
-mouseTarget.addEventListener('mouseover', function over(e) {
-  e.target.style.fontSize = '30px'
-})
-
-mouseTarget.addEventListener('mouseout', function leave(e) {
-  e.target.style.fontSize = '20px'
-})
+//7
+// const tasksMonth = document.getElementById('my-tasks')
+// function addTasks('')
