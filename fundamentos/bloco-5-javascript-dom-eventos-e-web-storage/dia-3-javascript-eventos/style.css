@@ -33,7 +33,9 @@ button {
   margin: 5px 2px;
   text-align: center;
   vertical-align: middle;
-  width: 13.6%;
+  width: 13%;
+  padding: 5px;
+  transition: 0.09s;
 }
 
 .input-container {

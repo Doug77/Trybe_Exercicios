@@ -109,3 +109,12 @@ function textFriday() {
 textFriday()
 
 //6
+let mouseTarget = document.querySelector('#days')
+
+mouseTarget.addEventListener('mouseover', function over(e) {
+  e.target.style.fontSize = '30px'
+})
+
+mouseTarget.addEventListener('mouseout', function leave(e) {
+  e.target.style.fontSize = '20px'
+})
