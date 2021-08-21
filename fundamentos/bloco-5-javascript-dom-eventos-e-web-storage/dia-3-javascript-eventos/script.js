@@ -130,3 +130,19 @@ function addTasks() {
   tasksMonth.appendChild(mytasks)
 }
 addTasks()
+
+//8
+function addColorTask(cor) {
+  const myColortasks = document.createElement('div')
+  myColortasks.style.backgroundColor = cor
+  myColortasks.addEventListener('click', function () {
+    //9
+    if (myColortasks.className !== 'selected-task') {
+      myColortasks.className = 'selected-task'
+    } else {
+      myColortasks.className = 'task'
+    }
+  })
+  tasksMonth.appendChild(myColortasks)
+}
+addColorTask('blue')
