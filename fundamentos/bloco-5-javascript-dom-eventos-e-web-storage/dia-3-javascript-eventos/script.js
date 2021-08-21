@@ -107,3 +107,5 @@ function textFriday() {
   })
 }
 textFriday()
+
+//6
