@@ -135,6 +135,7 @@ addTasks()
 function addColorTask(cor) {
   const myColortasks = document.createElement('div')
   myColortasks.style.backgroundColor = cor
+  myColortasks.className = 'task'
   myColortasks.addEventListener('click', function () {
     //9
     if (myColortasks.className !== 'selected-task') {
@@ -146,3 +147,21 @@ function addColorTask(cor) {
   tasksMonth.appendChild(myColortasks)
 }
 addColorTask('blue')
+
+//10
+const selectedDay = document.querySelectorAll('.day')
+const taskSelected = document.getElementsByClassName('selected-task')
+console.log(selectedDay)
+function colorDay() {
+  for (let i = 0; i < selectedDay.length; i++) {
+    selectedDay[i].addEventListener('click', () => {
+      selectedDay[i].className = 'selected-task'
+      if (selectedDay[i].className == taskSelected) {
+        selectedDay[i].style.color = taskSelected
+      } else {
+        selectedDay[i].style.backgroundColor = 'rgb(119,119,119)'
+      }
+    })
+  }
+}
+colorDay()
