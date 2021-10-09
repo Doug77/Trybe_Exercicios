@@ -16,11 +16,11 @@
       <p><em>Preencha todos os campos do formulário para continuar!</em></p>
     </header>
     <div class="formInput">
-      <form action="" method="GET">
+      <form id="form1" action="" method="GET">
         <div >
           <fieldset id="userData">
             <legend>Dados do Usuário</legend>
-            <div class="row">
+            <div class="row inputUserData">
               <label class="form-label">Nome Completo</label>
               <div class="col">
                 <input type="text" class="form-control" placeholder="Nome" aria-label="First name">
@@ -30,23 +30,43 @@
               </div>
             </div>
             <form class="row g-3">
-              <div class="col-md-6">
+              <div class="col-md-6 inputUserData">
                 <label for="inputEmail4" class="form-label">Email</label>
                 <input type="email" class="form-control" id="inputEmail4" placeholder="Ex.: myemail@email.com">
               </div>
-              <div class="col-12">
+              <div class="col-12 inputUserData">
                 <label for="inputAddress" class="form-label">Endereço</label>
                 <input type="text" class="form-control" id="inputAddress" placeholder="Rua Silva N 1234">
               </div>
-              <div class="col-12">
+              <div class="col-12 inputUserData">
                 <label for="inputAddress2" class="form-label">Endereço 2</label>
                 <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, andar">
               </div>
-              <div class="col-md-6">
-                <label for="inputCity" class="form-label">Cidade</label>
-                <input type="text" class="form-control" id="inputCity">
+              <div class="inputUserData">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                  <label class="form-check-label" for="flexRadioDefault1">
+                    Casa
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >
+                  <label class="form-check-label" for="flexRadioDefault2">
+                    Apartamento
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                  <label class="form-check-label" for="flexRadioDefault3">
+                    Condominio
+                  </label>
+                </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-md-6 inputUserData">
+                <label for="inputCity" class="form-label">Cidade</label>
+                <input type="text" class="form-control" id="inputCity" placeholder="Cidade que você mora">
+              </div>
+              <div class="col-md-4 inputUserData">
                 <label for="inputState" class="form-label">Estado</label>
                 <select id="inputState" class="form-select">
                   <option selected>Selecione um estado</option>
@@ -54,58 +74,38 @@
                 </select>
               </div>
             </form>
-            <div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                <label class="form-check-label" for="flexRadioDefault1">
-                  Casa
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                <label class="form-check-label" for="flexRadioDefault2">
-                  Apartamento
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
-                <label class="form-check-label" for="flexRadioDefault3">
-                  Condominio
-                </label>
-              </div>
-            </div>
           </fieldset>
         </div>
         <div>
           <fieldset id="userWork">
             <legend>Último Emprego</legend>
-            <div class="form-floating">
-              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-              <label for="floatingTextarea2">Descreva sua ultima atividade...</label>
+            <div class="form-floating inputUserData">
+              <textarea class="form-control" placeholder="max de 250 caracteres" id="floatingTextarea2" style="height: 100px" maxlength="250"></textarea>
+              <label for="floatingTextarea2">Descreva sua ultima atividade... </label>
             </div>
-            <label class="form-label">Cargo</label>
-              <div class="col">
+            <div class="col inputUserData">
+                <label class="form-label">Cargo</label>
                 <input type="text" class="form-control" placeholder="Cargo que você exercia" />
+            </div>
+            <div class="row inputUserData">
+              <label class="form-label">Data da atividade exercida</label>
+              <div class="col">
+                <input type="text" id="dia" class="form-control" placeholder="Dia" maxlength="2"/>
               </div>
-              <div class="row">
-                <label class="form-label">Data da atividade exercida</label>
-                <div class="col">
-                  <input type="number" class="form-control" placeholder="Dia" maxlength="2"/>
-                </div>
-                <div class="col">
-                  <input type="number" class="form-control" placeholder="Mês" maxlength="2"/>
-                </div>
-                <div class="col">
-                  <input type="number" class="form-control" placeholder="Ano" maxlength="4" />
-                </div>
+              <div class="col">
+                <input type="text" id="mes" class="form-control" placeholder="Mês" maxlength="2"/>
               </div>
+              <div class="col">
+                <input type="text" id="ano" class="form-control" placeholder="Ano" maxlength="4" />
+              </div>
+            </div>
           </fieldset>
         </div>
-        <div id="buttonContainer">
-          <button type="button" class="btn btn-outline-success">Enviar</button>
-          <button type="button" class="btn btn-outline-secondary">Limpar</button>
-        </div>
       </form>
+      <div id="buttonContainer">
+        <button type="submit" form="form1" id="btnSend" class="btn btn-outline-success" onclick="btnSubmit()">Enviar</button>
+        <button type="submit" form="form1" class="btn btn-outline-secondary btnClear">Limpar</button>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>

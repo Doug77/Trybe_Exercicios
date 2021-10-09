@@ -72,6 +72,7 @@ function checkDate() {
   const day = document.getElementById('dia')
   const month = document.getElementById('mes')
   const year = document.getElementById('ano')
+
   if (day.value < 0 || day.value > 31) {
     alert('Dia inválido, por favor insira um dia válido.')
   }
@@ -82,3 +83,12 @@ function checkDate() {
     alert('Ano inválido, por favor insira um ano válido.')
   }
 }
+
+checkDate();
+
+
+document.getElementById("btnSend").onclick = btnSubmit;
+
+function btnSubmit() {
+  alert('Suas informações foram salvas!');
+} 

@@ -1,0 +1,21 @@
+.head {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.formInput {
+  padding: 35px 150px 50px 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.inputUserData {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#userWork {
+  margin-top: 15px;
+}
