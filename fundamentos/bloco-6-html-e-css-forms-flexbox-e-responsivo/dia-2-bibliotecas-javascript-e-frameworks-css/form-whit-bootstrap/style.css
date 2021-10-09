@@ -1,10 +1,17 @@
+body {
+ background-color: #edf2f4;
+ color: #2B2D42;
+} 
+
 .head {
-  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 15px;
   text-align: center;
+  background-color: #8D99AE;
 }
 
 .formInput {
-  padding: 35px 150px 50px 150px;
+  padding: 15px 100px 40px 100px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -18,4 +25,19 @@
 
 #userWork {
   margin-top: 15px;
+}
+
+#fristInfo {
+  margin-top: 20px;
+  padding: 20px 50px 10px 50px;
+  border: 3px solid #EDF2F4;
+  border-radius: 7px;
+}
+
+#secondInfo {
+  margin-top: 20px;
+  margin-bottom: 35px;
+  padding: 15px 50px 10px 50px;
+  border: 3px solid #EDF2F4;
+  border-radius: 7px;
 }
