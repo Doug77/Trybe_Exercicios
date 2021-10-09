@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="bootstrap-5.1.0-dist/css/bootstrap.min.css" />
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="bootstrap-5.1.0-dist/js/bootstrap.min.js"></script>
+    <title>Forms</title>
+  </head>
+  <body>
+    <header class="head">
+      <h1>Formulário</h1>
+      <p><em>Preencha todos os campos do formulário para continuar!</em></p>
+    </header>
+    <div class="formInput">
+      <form action="" method="GET">
+        <fieldset id="userData">
+          <legend>Dados do Usuário</legend>
+          <div class="line-content">
+            <label for="Fullname"> Nome Completo: </label>
+            <input
+              type="text"
+              class="inputUser"
+              name="completedName"
+              id="Fullname"
+              required
+              maxlength="40"
+              placeholder="Digite seu nome"
+            />
+          </div>
+          <div class="line-content">
+            <label for="email">E-mail:</label>
+            <input
+              id="email" class="inputUser"
+              type="text"
+              name="userEmail"
+              required
+              maxlength="50"
+              placeholder="Digite seu e-mail"
+            />
+          </div>
+          <div class="line-content">
+            <label for="numberCpf">CPF:</label>
+            <input
+              id="numberCpf" class="inputUser"
+              type="text"
+              name="cpf"
+              required
+              maxlength="11"
+              placeholder="Digite Seu CPF"
+            />
+          </div>
+          <div class="line-content">
+            <label for="endereço">Endereço:</label>
+            <input
+              id="endereço" class="inputUser"
+              type="text"
+              name="address"
+              maxlength="200"
+              required
+              placeholder="Informe seu endereço"
+            />
+          </div>
+          <div class="line-content">
+            <label for="cidade">Cidade:</label>
+            <input
+              id="cidade" class="inputUser"
+              type="text"
+              required
+              maxlength="28"
+              placeholder="Digite sua cidade"
+            />
+          </div>
+          <div class="line-content">
+            <label id="selectedState">Estado:</label>
+            <select name="changeState" id="state" required>
+              <option>--Escola um estado--</option>
+            </select>
+          </div>
+          <div class="line-content" id="radioInput">
+            <label for="home">Casa</label>
+            <input type="radio" id="home" name="local-type" />
+            <label for="apt">Apartamento</label>
+            <input type="radio" id="apt" name="local-type" />
+          </div>
+        </fieldset>
+        <fieldset id="userWork">
+          <legend>Último Emprego</legend>
+          <div class="line-content textAreaContainer">
+            <label for="description">Descreva o seu Curriculo:</label>
+            <textarea
+              name="description"
+              maxlength="100"
+              required
+              class="TextArea"
+            ></textarea>
+          </div>
+          <div class="line-content">
+            <label for="cargo">Cargo</label>
+            <input
+              type="text" class="inputUser"
+              required
+              placeholder="Insira seu cargo"
+              maxlength="40"
+            />
+          </div>
+          <div class="line-content textAreaContainer">
+            <label for="workDescription">Descreva o seu cargo aqui:</label>
+            <textarea
+              name="workDescription"
+              name="descrição"
+              required
+              maxlength="500"
+            ></textarea>
+          </div>
+          <div class="line-content">
+            <label for="validDate">Data:</label>
+            <div id="dataContiner">
+              <input
+              class="dateUser"
+                type="text"
+                name="validDate"
+                id="dia"
+                required
+                maxlength="2"
+                placeholder="dia"
+              />
+              <input class="dateUser"  
+                type="text"
+                name="validDate"
+                id="mes"
+                required
+                maxlength="2"
+                placeholder="mes"
+              />
+              <input class="dateUser"
+                type="text"
+                name="validDate"
+                id="ano"
+                required
+                maxlength="4"
+                placeholder="ano"
+              />
+            </div>
+          </div>
+        </fieldset>
+        <div id="buttonContainer">
+          <button class="send btnForm">Enviar</button>
+          <button class="clean btnForm">Limpar</button>
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
