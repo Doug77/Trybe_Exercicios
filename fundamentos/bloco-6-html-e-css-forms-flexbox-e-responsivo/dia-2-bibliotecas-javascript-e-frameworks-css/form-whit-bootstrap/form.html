@@ -17,139 +17,93 @@
     </header>
     <div class="formInput">
       <form action="" method="GET">
-        <fieldset id="userData">
-          <legend>Dados do Usuário</legend>
-          <div class="line-content">
-            <label for="Fullname"> Nome Completo: </label>
-            <input
-              type="text"
-              class="inputUser"
-              name="completedName"
-              id="Fullname"
-              required
-              maxlength="40"
-              placeholder="Digite seu nome"
-            />
-          </div>
-          <div class="line-content">
-            <label for="email">E-mail:</label>
-            <input
-              id="email" class="inputUser"
-              type="text"
-              name="userEmail"
-              required
-              maxlength="50"
-              placeholder="Digite seu e-mail"
-            />
-          </div>
-          <div class="line-content">
-            <label for="numberCpf">CPF:</label>
-            <input
-              id="numberCpf" class="inputUser"
-              type="text"
-              name="cpf"
-              required
-              maxlength="11"
-              placeholder="Digite Seu CPF"
-            />
-          </div>
-          <div class="line-content">
-            <label for="endereço">Endereço:</label>
-            <input
-              id="endereço" class="inputUser"
-              type="text"
-              name="address"
-              maxlength="200"
-              required
-              placeholder="Informe seu endereço"
-            />
-          </div>
-          <div class="line-content">
-            <label for="cidade">Cidade:</label>
-            <input
-              id="cidade" class="inputUser"
-              type="text"
-              required
-              maxlength="28"
-              placeholder="Digite sua cidade"
-            />
-          </div>
-          <div class="line-content">
-            <label id="selectedState">Estado:</label>
-            <select name="changeState" id="state" required>
-              <option>--Escola um estado--</option>
-            </select>
-          </div>
-          <div class="line-content" id="radioInput">
-            <label for="home">Casa</label>
-            <input type="radio" id="home" name="local-type" />
-            <label for="apt">Apartamento</label>
-            <input type="radio" id="apt" name="local-type" />
-          </div>
-        </fieldset>
-        <fieldset id="userWork">
-          <legend>Último Emprego</legend>
-          <div class="line-content textAreaContainer">
-            <label for="description">Descreva o seu Curriculo:</label>
-            <textarea
-              name="description"
-              maxlength="100"
-              required
-              class="TextArea"
-            ></textarea>
-          </div>
-          <div class="line-content">
-            <label for="cargo">Cargo</label>
-            <input
-              type="text" class="inputUser"
-              required
-              placeholder="Insira seu cargo"
-              maxlength="40"
-            />
-          </div>
-          <div class="line-content textAreaContainer">
-            <label for="workDescription">Descreva o seu cargo aqui:</label>
-            <textarea
-              name="workDescription"
-              name="descrição"
-              required
-              maxlength="500"
-            ></textarea>
-          </div>
-          <div class="line-content">
-            <label for="validDate">Data:</label>
-            <div id="dataContiner">
-              <input
-              class="dateUser"
-                type="text"
-                name="validDate"
-                id="dia"
-                required
-                maxlength="2"
-                placeholder="dia"
-              />
-              <input class="dateUser"  
-                type="text"
-                name="validDate"
-                id="mes"
-                required
-                maxlength="2"
-                placeholder="mes"
-              />
-              <input class="dateUser"
-                type="text"
-                name="validDate"
-                id="ano"
-                required
-                maxlength="4"
-                placeholder="ano"
-              />
+        <div >
+          <fieldset id="userData">
+            <legend>Dados do Usuário</legend>
+            <div class="row">
+              <label class="form-label">Nome Completo</label>
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Nome" aria-label="First name">
+              </div>
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Sobrenome" aria-label="Last name">
+              </div>
             </div>
-          </div>
-        </fieldset>
+            <form class="row g-3">
+              <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Ex.: myemail@email.com">
+              </div>
+              <div class="col-12">
+                <label for="inputAddress" class="form-label">Endereço</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="Rua Silva N 1234">
+              </div>
+              <div class="col-12">
+                <label for="inputAddress2" class="form-label">Endereço 2</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, andar">
+              </div>
+              <div class="col-md-6">
+                <label for="inputCity" class="form-label">Cidade</label>
+                <input type="text" class="form-control" id="inputCity">
+              </div>
+              <div class="col-md-4">
+                <label for="inputState" class="form-label">Estado</label>
+                <select id="inputState" class="form-select">
+                  <option selected>Selecione um estado</option>
+                  <option>...</option>
+                </select>
+              </div>
+            </form>
+            <div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Casa
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Apartamento
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                <label class="form-check-label" for="flexRadioDefault3">
+                  Condominio
+                </label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+        <div>
+          <fieldset id="userWork">
+            <legend>Último Emprego</legend>
+            <div class="form-floating">
+              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+              <label for="floatingTextarea2">Descreva sua ultima atividade...</label>
+            </div>
+            <label class="form-label">Cargo</label>
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Cargo que você exercia" />
+              </div>
+              <div class="row">
+                <label class="form-label">Data da atividade exercida</label>
+                <div class="col">
+                  <input type="number" class="form-control" placeholder="Dia" maxlength="2"/>
+                </div>
+                <div class="col">
+                  <input type="number" class="form-control" placeholder="Mês" maxlength="2"/>
+                </div>
+                <div class="col">
+                  <input type="number" class="form-control" placeholder="Ano" maxlength="4" />
+                </div>
+              </div>
+          </fieldset>
+        </div>
         <div id="buttonContainer">
-          <button class="send btnForm">Enviar</button>
-          <button class="clean btnForm">Limpar</button>
+          <button type="button" class="btn btn-outline-success">Enviar</button>
+          <button type="button" class="btn btn-outline-secondary">Limpar</button>
         </div>
       </form>
     </div>

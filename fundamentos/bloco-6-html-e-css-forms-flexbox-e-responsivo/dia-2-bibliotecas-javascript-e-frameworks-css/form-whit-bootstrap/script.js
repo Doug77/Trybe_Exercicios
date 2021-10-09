@@ -59,7 +59,7 @@ const arrayTextoEstado = [
 ]
 
 function generetOption() {
-  const selecState = document.querySelector('#state')
+  const selecState = document.querySelector('#inputState')
   for (let i = 0; i < arraySiglaEstado.length; i++) {
     const changeState = document.createElement('option')
     selecState.appendChild(changeState).innerText = arrayTextoEstado[i]
