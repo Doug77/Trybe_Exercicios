@@ -1,76 +1,43 @@
+body {
+ background-color: #edf2f4;
+ color: #2B2D42;
+} 
+
 .head {
+  padding-top: 30px;
+  padding-bottom: 15px;
   text-align: center;
-  margin-bottom: 50px;
-  margin-top: 25px;
+  background-color: #8D99AE;
 }
 
 .formInput {
+  padding: 15px 100px 40px 100px;
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
 }
 
-legend {
-  text-align: center;
+.inputUserData {
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 #userWork {
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
-form {
-  margin-bottom: 75px;
-}
-
-input {
-  width: 100%;
-}
-
-.line-content {
-  margin-bottom: 15px;
-}
-
-#state {
-  width: 100%;
-}
-
-#radioInput {
-  width: 25%;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-
-.textAreaContainer {
-  display: flex;
-  flex-direction: column;
-}
-
-#dataContiner {
-  margin-top: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-.dateUser {
-  width: 30%;
-}
-
-#buttonContainer {
+#fristInfo {
   margin-top: 20px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: start;
+  padding: 20px 50px 10px 50px;
+  border: 3px solid #EDF2F4;
+  border-radius: 7px;
 }
 
-.btnForm {
-  width: 25%;
-}
-
-.send {
-  margin-right: 10px;
+#secondInfo {
+  margin-top: 20px;
+  margin-bottom: 35px;
+  padding: 15px 50px 10px 50px;
+  border: 3px solid #EDF2F4;
+  border-radius: 7px;
 }
