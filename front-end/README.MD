@@ -3,7 +3,7 @@
 
    * [x] Bloco 10: Introdução à React
    * [x] Bloco 11: Componentes com Estado, Eventos e Formulários com React
-   * [ ] Bloco 12: Ciclo de Vida de Componentes e React Router
+   * [x] Bloco 12: Ciclo de Vida de Componentes e React Router
    * * [x] Bloco 13: Metodologias Ágeis
    * [x] Bloco 14: Testes automatizados com React Testing Library
    * [ ] Bloco 15: Gerenciamento de estado com Redux
