@@ -8,5 +8,5 @@
    * [x] Bloco 14: Testes automatizados com React Testing Library
    * [x] Bloco 15: Gerenciamento de estado com Redux
    * * [x] Bloco 16: Projeto Jogo de Trivia
-   * [ ] Bloco 17: Context API e React Hooks
+   * [x] Bloco 17: Context API e React Hooks
    * [ ] Bloco 18: Projeto App de Receitas
