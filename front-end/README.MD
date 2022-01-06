@@ -9,4 +9,4 @@
    * [x] Bloco 15: Gerenciamento de estado com Redux
    * * [x] Bloco 16: Projeto Jogo de Trivia
    * [x] Bloco 17: Context API e React Hooks
-   * [ ] Bloco 18: Projeto App de Receitas
+   * [x] Bloco 18: Projeto App de Receitas
