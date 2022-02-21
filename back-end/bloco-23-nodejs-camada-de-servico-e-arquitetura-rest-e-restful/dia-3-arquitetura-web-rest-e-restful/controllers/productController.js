@@ -1,6 +1,5 @@
 const express = require('express');
 const ProductModel = require('../models/productModel');
-
 const router = express.Router();
 
 router.get('/list-products', async (req, res, next) => {
@@ -23,13 +22,13 @@ router.post('/add-user', async (req, res) => {
   res.send(newProduct);
 });
 
-router.post('/delete-user/:id', async (req, res) => {
+router.delete('/delete-user/:id', async (req, res) => {
   const products = await ProductModel.exclude(req.params.id);
 
   res.send(products);
 });
 
-router.post('/update-user/:id', async (req, res) => {
+router.put('/update-user/:id', async (req, res) => {
   const { name, brand } = req.body;
 
   const products = await ProductModel.update(req.params.id, name, brand);
