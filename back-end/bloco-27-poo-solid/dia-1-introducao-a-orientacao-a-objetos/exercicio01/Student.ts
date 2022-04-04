@@ -26,6 +26,25 @@ class Student {
   set nome(params: string) {
     this._nome = params;
   }
+
+  set notasDeTrabalho (params: number[]) {
+    this._notasDeTrabalho = params;
+  }
+
+  set notasDeProva (params: number[]) {
+    this._notasDeProva = params;
+  }
+
+  somaNotas() {
+    const notas = [...this._notasDeProva, ...this._notasDeTrabalho];
+    return notas.reduce((prevEl, currEl) => prevEl + currEl);    
+  }
+
+  mediaNotas() {
+    const notasTotais = this.somaNotas(); 
+    return Math.round(notasTotais / 6);
+  }
+
 }
 
 const estudante1 = new Student('123456', 'Joãozinho', [], []);
