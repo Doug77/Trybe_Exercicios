@@ -27,3 +27,9 @@ class Student {
     this._nome = params;
   }
 }
+
+const estudante1 = new Student('123456', 'Joãozinho', [], []);
+console.log(estudante1);
+
+const estudante2 = new Student('123456', 'Mariazinha', [], []);
+console.log(estudante2);
