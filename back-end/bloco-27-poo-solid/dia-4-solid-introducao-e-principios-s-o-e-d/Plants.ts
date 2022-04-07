@@ -44,27 +44,25 @@ export default class Plants {
     return plants;
   }
 
-  // async getPlantById(id: string) {
-  //   const plantsRaw = await fs.readFile(PLANTS, { encoding: 'utf8' });
-  //   const plants: IPlant[] = JSON.parse(plantsRaw);
+  async getPlantById(id: string) {
+    const plantsRaw = await this.getPlants();
 
-  //   const plantById = plants.find((plant) => plant.id === id);
-  //   if (!plantById) return null;
-  //   return plantById;
-  // }
+    const plantById = plantsRaw.find((plant) => plant.id === id);
+    if (!plantById) return null;
+    return plantById;
+  }
 
-  // async removePlantById(id: string) {
-  //   const plantsRaw = await fs.readFile(PLANTS, { encoding: 'utf8' });
-  //   const plants: IPlant[] = JSON.parse(plantsRaw);
+  async removePlantById(id: string) {
+    const plantsRaw = await this.getPlants();
+    
+    const removedPlant = plantsRaw.find((plant) => plant.id === id);
+    if (!removedPlant) return null;
 
-  //   const removedPlant = plants.find((plant) => plant.id === id);
-  //   if (!removedPlant) return null;
+    const newPlants = plantsRaw.filter((plant) => plant.id !== id);
+    await fs.writeFile(this.PLANTS, JSON.stringify(newPlants));
 
-  //   const newPlants = plants.filter((plant) => plant.id !== id);
-  //   await fs.writeFile(PLANTS, JSON.stringify(newPlants));
-
-  //   return removedPlant;
-  // }
+    return removedPlant;
+  }
 
   // async getPlantsThatNeedsSunWithId(id: string) {
   //   const plantsRaw = await fs.readFile(PLANTS, { encoding: 'utf8' });

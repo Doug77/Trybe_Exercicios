@@ -12,6 +12,20 @@ app.get('/plants', async (_req, res) => {
   res.send(plants);
 });
 
+app.get('/plants/:id', async (req, res) => {
+  const { id } = req.params;
+  const plants = await new Plants().getPlantById(id);
+
+  res.send(plants);
+});
+
+app.delete('/plants/:id', async (req, res) => {
+  const { id } = req.params;
+  const plants = await new Plants().removePlantById(id);
+
+  res.send(plants);
+});
+
 app.listen(3000, () => {
   console.log('Ouvindo a porta 3000');
 });
