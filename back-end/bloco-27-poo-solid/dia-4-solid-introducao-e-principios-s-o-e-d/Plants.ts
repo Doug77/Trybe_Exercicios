@@ -1,21 +1,22 @@
-// import fs from 'fs/promises';
+import fs from 'fs/promises';
+import path from 'path';
 
-// interface IPlant {
-//   id: string,
-//   breed: string,
-//   needsSun: Boolean,
-//   origin: string,
-//   size: number,
-//   specialCare?: { waterFrequency: number },
-// }
+interface IPlant {
+  id: string,
+  breed: string,
+  needsSun: Boolean,
+  origin: string,
+  size: number,
+  specialCare?: { waterFrequency: number },
+}
 
 // interface IOpsInfo { 
 //   createdPlants: number 
 // }
 
-// const PLANTS = 'plants.json';
+export default class Plants {
+  private PLANTS = path.join(__dirname, 'plants.json');
 
-class Plants {
   // initPlant(plant: IPlant) {
   //   const { id, breed, needsSun, origin, specialCare, size } = plant;
 
@@ -37,11 +38,11 @@ class Plants {
   //   return newPlant;
   // }
 
-  // async getPlants() {
-  //   const plantsRaw = await fs.readFile(PLANTS, { encoding: 'utf8' });
-  //   const plants: IPlant[] = JSON.parse(plantsRaw);
-  //   return plants;
-  // }
+  async getPlants() {
+    const plantsRaw = await fs.readFile(this.PLANTS, { encoding: 'utf8' });
+    const plants: IPlant[] = JSON.parse(plantsRaw);
+    return plants;
+  }
 
   // async getPlantById(id: string) {
   //   const plantsRaw = await fs.readFile(PLANTS, { encoding: 'utf8' });
@@ -110,5 +111,3 @@ class Plants {
   //   return newPlant;
   // }
 }
-
-export default Plants;
