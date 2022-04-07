@@ -1,4 +1,6 @@
-class Student {
+import { Person } from './Person';
+
+class Student extends Person {
   private _matricula: string
   private _nome: string
   private _notasDeProva: number[]
